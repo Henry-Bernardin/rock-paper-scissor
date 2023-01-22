@@ -5,4 +5,4 @@ let shoot = choices[rand];
 function getComputerChoice(){
     return shoot;
 }
-(getComputerChoice()
+getComputerChoice()
