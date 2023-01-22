@@ -1,7 +1,8 @@
-var choices = ['Paper','Rock','Scissors'];
-var rand = Math.floor(Math.random() * choices.length);
-var shoot = choices[rand];
+let choices = ['Paper','Rock','Scissors'];
+let rand = Math.floor(Math.random() * choices.length);
+let shoot = choices[rand];
 
 function getComputerChoice(){
     return shoot;
 }
+(getComputerChoice()
