@@ -13,3 +13,8 @@ function getComputerChoice() {
       }
 }
 
+//paper beats rock, rock beats scissors, scissors beats paper
+//variable for rock, scissors and paper
+function oneRound (playerSelection, computerSelection) {
+
+}
