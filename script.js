@@ -12,4 +12,4 @@ function getComputerChoice() {
           return 'Paper'
       }
 }
-// Testing ii
+
