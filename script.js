@@ -5,3 +5,5 @@ var shoot = choices[rand];
 function getComputerChoice(){
     return shoot;
 }
+
+getComputerChoice();
