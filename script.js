@@ -13,4 +13,3 @@ function getComputerChoice() {
       }
 }
 
-console.log(getComputerChoice()); 
