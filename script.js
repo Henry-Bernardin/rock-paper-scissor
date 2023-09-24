@@ -5,7 +5,7 @@ function getComputerChoice() {
     case 0:
       return "rock";
     case 1:
-      return "acissors";
+      return "scissors";
     case 2:
       return "paper";
   }
