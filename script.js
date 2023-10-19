@@ -39,13 +39,6 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
-// Example usage:
-const playerChoice = 'Rock'; // Case-insensitive
-const computerChoice = choices[Math.floor(Math.random() * choices.length)]; // Computer's choice
-
-const result = playRound(playerChoice, computerChoice);
-console.log(result);
-
 const playerSelection = "rock";
 const computerSelection = getComputerChoice();
 console.log(playRound(playerSelection, computerSelection));
