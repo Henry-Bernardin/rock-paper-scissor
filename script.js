@@ -1,8 +1,6 @@
 //Randomly selects the computer's choices
 function getComputerChoice() {
-  //Select the three choices at random
   let randomChoice = Math.floor(Math.random() * 3);
-
   switch (randomChoice) {
     case 0:
       return "rock";
