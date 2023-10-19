@@ -46,7 +46,6 @@ const computerChoice = choices[Math.floor(Math.random() * choices.length)]; // C
 const result = playRound(playerChoice, computerChoice);
 console.log(result);
 
-
 const playerSelection = "rock";
 const computerSelection = getComputerChoice();
 console.log(playRound(playerSelection, computerSelection));
