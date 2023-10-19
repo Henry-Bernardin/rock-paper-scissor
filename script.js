@@ -1,6 +1,8 @@
-/* function which randomly selects rock paper or scissors this function uses a switch statement to select the choices*/
+//Randomly selects the computer's choices
 function getComputerChoice() {
+  //Select the three choices at random
   let randomChoice = Math.floor(Math.random() * 3);
+
   switch (randomChoice) {
     case 0:
       return "rock";
@@ -11,7 +13,45 @@ function getComputerChoice() {
   }
 }
 
-/*function that plays one round. Rock wins against scissors. Scissors wins against paper. Paper wins against rock.*/
+function playRound(playerSelection, computerSelection) {
+  // Make the player's selection case-insensitive
+  playerSelection = playerSelection.toLowerCase();
+
+  // Define the possible choices
+  const choices = ['rock', 'paper', 'scissors'];
+
+  // Check if the player's selection is valid
+  if (!choices.includes(playerSelection)) {
+      return "Invalid choice. Please choose rock, paper, or scissors.";
+  }
+
+  // Determine the winner of the round
+  if (playerSelection === computerSelection) {
+      return `It's a tie! Both chose ${playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1)}`;
+  } else if (
+      (playerSelection === 'rock' && computerSelection === 'scissors') ||
+      (playerSelection === 'paper' && computerSelection === 'rock') ||
+      (playerSelection === 'scissors' && computerSelection === 'paper')
+  ) {
+      return `You win! ${playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1)} beats ${computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1)}`;
+  } else {
+      return `You lose! ${computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1)} beats ${playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1)}`;
+  }
+}
+
+// Example usage:
+const playerChoice = 'Rock'; // Case-insensitive
+const computerChoice = choices[Math.floor(Math.random() * choices.length)]; // Computer's choice
+
+const result = playRound(playerChoice, computerChoice);
+console.log(result);
+
+
+const playerSelection = "rock";
+const computerSelection = getComputerChoice();
+console.log(playRound(playerSelection, computerSelection));
+
+/*function that plays one round. Rock wins against scissors. Scissors wins against paper. Paper wins against rock.
 function playRound(playerSelection, computerSelection) {
   switch ((playerSelection, computerSelection)) {
     case playerSelection === "rock" && computerSelection === "rock":
@@ -27,7 +67,4 @@ function playRound(playerSelection, computerSelection) {
     // code block
   }
 }
-
-const playerSelection = "rock";
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
+*/
