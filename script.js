@@ -40,21 +40,3 @@ function playRound(playerSelection, computerSelection) {
 const playerSelection = "rock";
 const computerSelection = getComputerChoice();
 console.log(playRound(playerSelection, computerSelection));
-
-/*function that plays one round. Rock wins against scissors. Scissors wins against paper. Paper wins against rock.
-function playRound(playerSelection, computerSelection) {
-  switch ((playerSelection, computerSelection)) {
-    case playerSelection === "rock" && computerSelection === "rock":
-      console.log("Tie! Go again!");
-      break;
-    case playerSelection === "rock" && computerSelection === "paper":
-      console.log("You lose! Paper beats rock!");
-      break;
-    case playerSelection === "rock" && computerSelection === "scissors":
-      console.log("You win! Rock beats scissors!");
-      break;
-    default:
-    // code block
-  }
-}
-*/
