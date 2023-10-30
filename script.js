@@ -11,8 +11,6 @@ function getComputerChoice() {
   }
 }
 
-
-
 function game(){
   function playRound(playerSelection, computerSelection) {
     // Make the player's selection case-insensitive
@@ -25,7 +23,6 @@ function game(){
     if (!choices.includes(playerSelection)) {
         return "Invalid choice. Please choose rock, paper, or scissors.";
     }
-  
     // Determine the winner of the round
     if (playerSelection === computerSelection) {
         return `It's a tie! Both chose ${playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1)}`;
@@ -39,7 +36,7 @@ function game(){
         return `You lose! ${computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1)} beats ${playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1)}`;
     }
   }
-  
+
   const playerSelection = "rock";
   const computerSelection = getComputerChoice();
   console.log(playRound(playerSelection, computerSelection));
