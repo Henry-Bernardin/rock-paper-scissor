@@ -39,7 +39,7 @@ function playRound(playerSelection, computerSelection) {
 
 const playerSelection = "rock";
 const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
+//console.log(playRound(playerSelection, computerSelection)); //Play one round
 
 /*function that plays one round. Rock wins against scissors. Scissors wins against paper. Paper wins against rock.
 function playRound(playerSelection, computerSelection) {
