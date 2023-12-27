@@ -37,11 +37,11 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
-const playerSelection = "rock";
+let playerSelection = "rock";
 const computerSelection = getComputerChoice();
 console.log(playRound(playerSelection, computerSelection)); //Play one round
 
-//function that plays one round. Rock wins against scissors. Scissors wins against paper. Paper wins against rock.
+/*function that plays one round. Rock wins against scissors. Scissors wins against paper. Paper wins against rock.
 function playRound(playerSelection, computerSelection) {
   switch ((playerSelection, computerSelection)) {
     case playerSelection === "rock" && computerSelection === "rock":
@@ -56,9 +56,24 @@ function playRound(playerSelection, computerSelection) {
     default:
     // code block
   }
-}
+} */
 
 //button for rock 
-const rock = document.getElementById("rock"); 
-const paper = document.getElementById("paper"); 
-const scissors = document.getElementById("scissors"); 
+/*const rockButton = document.getElementById("rock"); 
+rockButton.addEventListener("click", function(){
+  playRound("rock", computerSelection); 
+}); */
+
+const rockButton = document.getElementById("rock");
+rockButton.addEventListener("click", function() {
+  const computerSelection = getComputerChoice();
+  const result = playRound("rock", computerSelection);
+  console.log(result);
+});
+
+
+//button for paper 
+const paperButton = document.getElementById("paper"); 
+
+//button for scissors 
+const scissorsButton = document.getElementById("scissors"); 
