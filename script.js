@@ -58,3 +58,6 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 */
+
+//button for rock 
+const rock = document.query
