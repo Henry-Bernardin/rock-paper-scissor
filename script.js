@@ -74,6 +74,11 @@ rockButton.addEventListener("click", function() {
 
 //button for paper 
 const paperButton = document.getElementById("paper"); 
+paperButton.addEventListener("click", function() {
+  const computerSelection = getComputerChoice();
+  const result = playRound("paper", computerSelection);
+  console.log(result);
+});
 
 //button for scissors 
 const scissorsButton = document.getElementById("scissors"); 
