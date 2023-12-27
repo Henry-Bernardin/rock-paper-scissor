@@ -82,3 +82,8 @@ paperButton.addEventListener("click", function() {
 
 //button for scissors 
 const scissorsButton = document.getElementById("scissors"); 
+scissorsButton.addEventListener("click", function() {
+  const computerSelection = getComputerChoice();
+  const result = playRound("scissors", computerSelection);
+  console.log(result);
+});
