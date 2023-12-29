@@ -71,7 +71,7 @@ const rockButton = document.getElementById("rock");
 rockButton.addEventListener("click", function() {
   const computerSelection = getComputerChoice();
   const result = playRound("rock", computerSelection);
-  document.getElementById("scoreCard").innerHTML = result; 
+  document.getElementById("scoreDisplay").innerHTML = result; 
 });
 
 
@@ -80,7 +80,7 @@ const paperButton = document.getElementById("paper");
 paperButton.addEventListener("click", function() {
   const computerSelection = getComputerChoice();
   const result = playRound("paper", computerSelection);
-  document.getElementById("scoreCard").innerHTML = result; 
+  document.getElementById("scoreDisplay").innerHTML = result; 
 });
 
 //button for scissors 
@@ -88,6 +88,6 @@ const scissorsButton = document.getElementById("scissors");
 scissorsButton.addEventListener("click", function() {
   const computerSelection = getComputerChoice();
   const result = playRound("scissors", computerSelection);
-  document.getElementById("scoreCard").innerHTML = result; 
+  document.getElementById("scoreDisplay").innerHTML = result; 
 });
 
