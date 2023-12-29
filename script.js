@@ -56,5 +56,38 @@ function playRound(playerSelection, computerSelection) {
     default:
     // code block
   }
-}
-*/
+} */
+
+//button for rock 
+/*const rockButton = document.getElementById("rock"); 
+rockButton.addEventListener("click", function(){
+  playRound("rock", computerSelection); 
+}); */
+
+//div for score card 
+const scoreCard = document.getElementById("scoreDisplay"); 
+
+const rockButton = document.getElementById("rock");
+rockButton.addEventListener("click", function() {
+  const computerSelection = getComputerChoice();
+  const result = playRound("rock", computerSelection);
+  document.getElementById("scoreDisplay").innerHTML = result; 
+});
+
+
+//button for paper 
+const paperButton = document.getElementById("paper"); 
+paperButton.addEventListener("click", function() {
+  const computerSelection = getComputerChoice();
+  const result = playRound("paper", computerSelection);
+  document.getElementById("scoreDisplay").innerHTML = result; 
+});
+
+//button for scissors 
+const scissorsButton = document.getElementById("scissors"); 
+scissorsButton.addEventListener("click", function() {
+  const computerSelection = getComputerChoice();
+  const result = playRound("scissors", computerSelection);
+  document.getElementById("scoreDisplay").innerHTML = result; 
+});
+
