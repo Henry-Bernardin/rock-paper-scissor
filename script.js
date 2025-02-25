@@ -16,24 +16,34 @@ function playRound(playerSelection, computerSelection) {
   playerSelection = playerSelection.toLowerCase();
 
   // Define the possible choices
-  const choices = ['rock', 'paper', 'scissors'];
+  const choices = ["rock", "paper", "scissors"];
 
   // Check if the player's selection is valid
   if (!choices.includes(playerSelection)) {
-      return "Invalid choice. Please choose rock, paper, or scissors.";
+    return "Invalid choice. Please choose rock, paper, or scissors.";
   }
 
   // Determine the winner of the round
   if (playerSelection === computerSelection) {
-      return `It's a tie! Both chose ${playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1)}`;
+    return `It's a tie! Both chose ${
+      playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1)
+    }`;
   } else if (
-      (playerSelection === 'rock' && computerSelection === 'scissors') ||
-      (playerSelection === 'paper' && computerSelection === 'rock') ||
-      (playerSelection === 'scissors' && computerSelection === 'paper')
+    (playerSelection === "rock" && computerSelection === "scissors") ||
+    (playerSelection === "paper" && computerSelection === "rock") ||
+    (playerSelection === "scissors" && computerSelection === "paper")
   ) {
-      return `You win! ${playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1)} beats ${computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1)}`;
+    return `You win! ${
+      playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1)
+    } beats ${
+      computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1)
+    }`;
   } else {
-      return `You lose! ${computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1)} beats ${playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1)}`;
+    return `You lose! ${
+      computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1)
+    } beats ${
+      playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1)
+    }`;
   }
 }
 
@@ -58,36 +68,34 @@ function playRound(playerSelection, computerSelection) {
   }
 } */
 
-//button for rock 
+//button for rock
 /*const rockButton = document.getElementById("rock"); 
 rockButton.addEventListener("click", function(){
   playRound("rock", computerSelection); 
 }); */
 
-//div for score card 
-const scoreCard = document.getElementById("scoreDisplay"); 
+//div for score card
+const scoreCard = document.getElementById("scoreDisplay");
 
 const rockButton = document.getElementById("rock");
-rockButton.addEventListener("click", function() {
+rockButton.addEventListener("click", function () {
   const computerSelection = getComputerChoice();
   const result = playRound("rock", computerSelection);
-  document.getElementById("scoreDisplay").innerHTML = result; 
+  document.getElementById("scoreDisplay").innerHTML = result;
 });
 
-
-//button for paper 
-const paperButton = document.getElementById("paper"); 
-paperButton.addEventListener("click", function() {
+//button for paper
+const paperButton = document.getElementById("paper");
+paperButton.addEventListener("click", function () {
   const computerSelection = getComputerChoice();
   const result = playRound("paper", computerSelection);
-  document.getElementById("scoreDisplay").innerHTML = result; 
+  document.getElementById("scoreDisplay").innerHTML = result;
 });
 
-//button for scissors 
-const scissorsButton = document.getElementById("scissors"); 
-scissorsButton.addEventListener("click", function() {
+//button for scissors
+const scissorsButton = document.getElementById("scissors");
+scissorsButton.addEventListener("click", function () {
   const computerSelection = getComputerChoice();
   const result = playRound("scissors", computerSelection);
-  document.getElementById("scoreDisplay").innerHTML = result; 
+  document.getElementById("scoreDisplay").innerHTML = result;
 });
-
