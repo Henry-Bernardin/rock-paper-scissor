@@ -15,8 +15,8 @@ function getComputerChoice() {
 let getHumanChoice = prompt("What is your choice?");
 
 //Keeps track of the players score
-let humanScore;
-let computerScore;
+let humanScore = 0;
+let computerScore = 0;
 
 function playRound(playerSelection, computerSelection) {
   // Make the player's selection case-insensitive
