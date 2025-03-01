@@ -11,6 +11,11 @@ function getComputerChoice() {
   }
 }
 
+function getHumanChoice() {
+  let greeting = "Input your choice";
+  prompt(greeting);
+}
+
 function playRound(playerSelection, computerSelection) {
   // Make the player's selection case-insensitive
   playerSelection = playerSelection.toLowerCase();
