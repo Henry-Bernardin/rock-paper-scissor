@@ -11,10 +11,8 @@ function getComputerChoice() {
   }
 }
 
-function getHumanChoice() {
-  let greeting = "Input your choice";
-  prompt(greeting);
-}
+//Gets user input
+let getHumanChoice = prompt("What is your choice?");
 
 function playRound(playerSelection, computerSelection) {
   // Make the player's selection case-insensitive
