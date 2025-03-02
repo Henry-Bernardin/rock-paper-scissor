@@ -18,6 +18,8 @@ let getHumanChoice = prompt("What is your choice?");
 let humanScore = 0;
 let computerScore = 0;
 
+function playRound(humanChoice, computerChoice) {}
+
 /* 
 //Play a single round
 function playRound(playerSelection, computerSelection) {
