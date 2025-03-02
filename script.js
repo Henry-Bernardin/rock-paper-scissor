@@ -18,7 +18,10 @@ let getHumanChoice = prompt("What is your choice?");
 let humanScore = 0;
 let computerScore = 0;
 
+/* 
+//Play a single round
 function playRound(playerSelection, computerSelection) {
+
   // Make the player's selection case-insensitive
   playerSelection = playerSelection.toLowerCase();
 
@@ -79,7 +82,7 @@ function playRound(playerSelection, computerSelection) {
 /*const rockButton = document.getElementById("rock"); 
 rockButton.addEventListener("click", function(){
   playRound("rock", computerSelection); 
-}); */
+}); 
 
 //div for score card
 const scoreCard = document.getElementById("scoreDisplay");
@@ -106,3 +109,4 @@ scissorsButton.addEventListener("click", function () {
   const result = playRound("scissors", computerSelection);
   document.getElementById("scoreDisplay").innerHTML = result;
 });
+*/
