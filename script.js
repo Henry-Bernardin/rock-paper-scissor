@@ -14,7 +14,12 @@ function getComputerChoice() {
 const computerSelection = getComputerChoice();
 
 //Gets user input
-let getHumanChoice = prompt("What is your choice?");
+function getHumanChoice() {
+  return prompt("What is your choice?");
+}
+
+//Declaration of constant which holds getHumanChoice function
+const humanSelection = getHumanChoice();
 
 //Keeps track of the players score
 let humanScore = 0;
