@@ -10,6 +10,8 @@ function getComputerChoice() {
       return "paper";
   }
 }
+//declaration of constant which holds getComputerChoice function
+const computerSelection = getComputerChoice();
 
 //Gets user input
 let getHumanChoice = prompt("What is your choice?");
