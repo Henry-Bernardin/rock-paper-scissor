@@ -10,7 +10,7 @@ function getComputerChoice() {
       return "paper";
   }
 }
-//declaration of constant which holds getComputerChoice function
+//Declaration of constant which holds getComputerChoice function
 const computerSelection = getComputerChoice();
 
 //Gets user input
